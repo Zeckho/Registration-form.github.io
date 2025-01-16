@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="userForm">
+            <img src="./Zeckho.png" alt="logo" class="logo">
+
+            <h2>Digital Marketing Training Demo Session</h2>
+            <fieldset>
+                <legend><b>Description</b></legend>
+                <div class="description">
+                    <p>Discover the power of digital marketing and learn how to create impactful strategies to grow businesses in today’s digital era. This session is perfect for students, professionals, and entrepreneurs!</p>
+                    <p><b>Trainer:</b> Mr. Rajkumar</p>
+                    <p><b>Visit us at:</b> <a href="https://www.zeckhoitservices.com" target="_blank">www.zeckhoitservices.com</a></p>
+                </div>
+            </fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-label="Full Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-label="Email Address">
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" placeholder="Enter your phone number" required aria-label="Phone Number">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="0" required aria-label="Age">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required aria-label="Gender">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location" required aria-label="Location">
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required aria-label="Category">
+                <option value="">Select</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="entrepreneur">Entrepreneur</option>
+                <option value="other">Other</option>
+            </select>
+
+            <fieldset>
+                <legend><b>Book Your Slot!!!</b></legend>
+                <label for="slot">29-Jan-2025 (6:30 PM to 7:30 PM):</label>
+                <select id="slot" name="slot" required aria-label="Slot">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="maybe">May Be</option>
+                </select>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+      <p>Copyright © 2025 <a href="https://www.zeckhoitservices.com" target="_blank">zeckhoitservices</a>. All Rights Reserved.</p>
+      <p>Designed & Developed by Zeckho IT Services</p>
+    </footer>
+</body>
+    <script src="script.js"></script>
+</html>

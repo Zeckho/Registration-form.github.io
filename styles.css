@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333333; /* Dark background */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Ensure footer is at the bottom */
+    align-items: center; /* Center the content horizontally */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.form-container {
+    background: #000; /* Black form background */
+    color: #fff; /* White text for contrast */
+    border: 2px solid #ff0000; /* Red border for the form */
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+a{
+  color: red;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #ff0000; /* Red heading text */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff0000; /* Red labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff0000; /* Red border for inputs */
+    border-radius: 4px;
+    background-color: #fff; /* White input background */
+    color: #000; /* Black text */
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff0000; /* Red button background */
+    color: #fff; /* White button text */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+button:focus {
+    outline: 2px solid #fff; /* White focus outline */
+    outline-offset: 2px;
+}
+
+/* Description and responsiveness */
+.description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ddd; /* Light gray for readability */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0; /* Add padding for spacing */
+    background-color: #000; /* Black background */
+    font-size: 0.9em;
+    color: #ccc; /* Lighter gray text for readability */
+    width: 100%; /* Full width for the footer */
+    position: relative; /* Ensure it spans across the page */
+    margin-top: 20px; /* Space between the form and footer */
+}
+
+footer a {
+    color: #ff0000; /* Red link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px; /* Adjust form padding on smaller screens */
+    }
+}
